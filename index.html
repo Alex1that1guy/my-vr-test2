@@ -31,6 +31,25 @@
     </a-scene>
   </body>
 </html>
+<a-scene>
+  <a-assets>
+    <a-asset-item id="myModel" src="test.glb"></a-asset-item>
+  </a-assets>
+
+  <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#777"></a-plane>
+  
+  <a-entity gltf-model="#myModel" 
+            position="0 0.01 0" 
+            rotation="-90 0 0" 
+            scale="0.01 0.01 0.01">
+  </a-entity>
+
+  <a-entity position="0 1.6 3">
+    <a-camera look-controls></a-camera>
+  </a-entity>
+  
+  <a-sky color="#222"></a-sky>
+</a-scene>
 
 
 
